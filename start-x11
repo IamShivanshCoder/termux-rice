@@ -1,0 +1,54 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+# ── 1. Setup ──────────────────────────────────────────────────
+DISPLAY_ID=":0"
+X11_TMP="${TMPDIR:-$PREFIX/tmp}"
+LOG_FILE="$HOME/.x11-server.log"
+
+# Colors for clarity
+CYN='\033[0;36m'
+GRN='\033[0;32m'
+YLW='\033[1;33m'
+RST='\033[0m'
+
+# ── 2. The Great Cleanup ──────────────────────────────────────
+echo -e "${CYN}[*] Pre-flight cleanup...${RST}"
+pkill -9 -f "termux-x11" 2>/dev/null
+rm -rf "$X11_TMP/.X11-unix" "$X11_TMP/.X*-lock"
+
+mkdir -p "$X11_TMP/.X11-unix"
+chmod 1777 "$X11_TMP/.X11-unix"
+
+# ── 3. Export Environment (The Fix for your Error) ─────────────
+# We export these NOW so the script and its children inherit them
+export DISPLAY=$DISPLAY_ID
+export XDG_RUNTIME_DIR="$X11_TMP"
+export PULSE_SERVER=127.0.0.1 # Bonus: Helps with sound later
+
+# ── 4. Launch Server ──────────────────────────────────────────
+echo -e "${CYN}[*] Launching Termux:X11 on $DISPLAY...${RST}"
+termux-x11 $DISPLAY -ac > "$LOG_FILE" 2>&1 &
+SERVER_PID=$!
+
+# ── 5. Wait & Verify ──────────────────────────────────────────
+echo -n "Waiting for display to initialize"
+for i in {1..10}; do
+    if xdpyinfo >/dev/null 2>&1; then
+        echo -e "\n${GRN}[✓] X11 Server is READY on $DISPLAY${RST}"
+        break
+    fi
+    echo -n "."
+    sleep 1
+    if [ $i -eq 10 ]; then
+        echo -e "\n${YLW}[!] Server is slow. Check the Termux:X11 Android App!${RST}"
+    fi
+done
+
+# ── 6. Interactive Shell or App Launch ───────────────────────
+echo -e "${CYN}------------------------------------------${RST}"
+echo -e "Your DISPLAY is set to: ${GRN}$DISPLAY${RST}"
+echo -e "You can now run GUI apps. Example: ${GRN}xfce4-terminal &${RST}"
+echo -e "${CYN}------------------------------------------${RST}"
+
+# Keep the script alive so you stay in the environment
+exec bash
