@@ -3,6 +3,5 @@
 
 wget https://raw.githubusercontent.com/IamShivanshCoder/termux-rice/refs/heads/main/start-x11 -O /data/data/com.termux/files/usr/bin/start-x11
 rm -rf /data/data/com.termux/files/usr/bin/start-x11
-
 termux-reload-settings
 
