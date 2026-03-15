@@ -1,4 +1,8 @@
-termux-change-repo
+echo "deb https://mirrors.ravidwivedi.in/termux/termux-main stable main" > /data/data/com.termux/files/usr/etc/apt/sources.list 
+
+
+pkg --check-mirror update
+
 
 pkg update -y && pkg upgrade -y
 
