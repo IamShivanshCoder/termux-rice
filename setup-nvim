@@ -1,0 +1,20 @@
+termux-change-repo
+
+pkg update -y && pkg upgrade -y
+
+
+pkg i neovim clang libllvm python3 nodejs curl wget ncurses-utils lazygit git tree-sitter lua-language-server luarocks ripgrep fd stylua
+
+
+curl -fsSL https://raw.githubusercontent.com/arnavgr/termux-nf/main/install.sh | bash
+
+
+getnf
+git config --global user.name "$GIT_NAME"
+
+git config --global user.email "$GIT_EMAIL"
+
+git config --global credential.helper store
+
+
+git clone https://github.com/IamShivanshCoder/nvim-dotfiles.git ~/.config/nvim
