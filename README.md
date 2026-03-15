@@ -1,6 +1,6 @@
 # Termux Collection : Essential Scripts
 
-essentialsentialntainssentialsentialntains contains essential scripts for setting up termux and its utilities.
+It contains essential scripts for setting up termux and its utilities.
 ## Setup Base + Neovim 
 ``` 
 curl https://raw.githubusercontent.com/IamShivanshCoder/termux-rice/refs/heads/main/setup-nvim | bash
