@@ -7,7 +7,7 @@ curl https://raw.githubusercontent.com/IamShivanshCoder/termux-rice/refs/heads/m
 ```
 ## Setup GUI and X11
 ```
-curl https://raw.githubusercontent.com/IamShivanshCoder/termux-rice/refs/heads/main/start-x11 | bash
+curl https://raw.githubusercontent.com/IamShivanshCoder/termux-rice/refs/heads/main/setup-x11 | bash
 ```
 
 
