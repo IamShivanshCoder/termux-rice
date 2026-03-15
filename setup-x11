@@ -1,3 +1,6 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+
 wget https://raw.githubusercontent.com/IamShivanshCoder/termux-rice/refs/heads/main/start-x11
 mv start-x11 /data/data/com.termux/files/usr/bin/
 
