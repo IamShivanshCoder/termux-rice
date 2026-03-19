@@ -3,11 +3,11 @@
 It contains essential scripts for setting up termux and its utilities.
 ## Setup Base + Neovim 
 ``` 
-curl https://raw.githubusercontent.com/IamShivanshCoder/termux-rice/refs/heads/main/setup-nvim | bash
+curl https://raw.githubusercontent.com/IamShivanshCoder/termux-rice/refs/heads/main/scripts/setup-nvim | bash
 ```
 ## Setup GUI and X11
 ```
-curl https://raw.githubusercontent.com/IamShivanshCoder/termux-rice/refs/heads/main/setup-x11 | bash && chmod +x ~/../usr/bin/start-x11
+curl https://raw.githubusercontent.com/IamShivanshCoder/termux-rice/refs/heads/main/scripts/setup-x11 | bash && chmod +x ~/../usr/bin/start-x11
 ```
 
 
