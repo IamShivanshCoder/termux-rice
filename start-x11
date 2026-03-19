@@ -18,6 +18,10 @@ rm -rf "$X11_TMP/.X11-unix" "$X11_TMP/.X*-lock"
 
 mkdir -p "$X11_TMP/.X11-unix"
 chmod 1777 "$X11_TMP/.X11-unix"
+unset PULSE_SERVER
+
+# pulseaudio support 
+pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" --exit-idle-time=-1
 
 # ── 3. Export Environment (The Fix for your Error) ─────────────
 # We export these NOW so the script and its children inherit them
