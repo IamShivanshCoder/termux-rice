@@ -1,0 +1,36 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+termux-change-repo
+
+# 2. Update with mirror check
+pkg update -y
+pkg upgrade -y
+
+# 3. Install core packages + GitHub CLI (gh)
+pkg i neovim clang libllvm python3 nodejs curl wget ncurses-utils \
+lazygit git tree-sitter lua-language-server luarocks ripgrep fd \
+stylua gh -y
+
+
+pkg i x11-repo tur-repo 
+pkg i termux-x11-nightly fish starship fastfetch
+pkg install mesa-zink virglrenderer-mesa-zink vulkan-loader-android virglrenderer-android
+
+#Setup fish and starship
+chsh -S fish
+termux-reload-settings
+
+# 5. Nerd Font Installation
+curl -fsSL https://raw.githubusercontent.com/arnavgr/termux-nf/main/install.sh | bash
+
+# 6. Clone Neovim Dotfiles
+if [ -d "$HOME/.config/nvim" ]; then
+    echo "Backing up existing nvim config..."
+    mv ~/.config/nvim ~/.config/nvim.bak
+fi
+
+echo "Cloning Neovim config..."
+git clone https://github.com/IamShivanshCoder/nvim-dotfiles.git ~/.config/nvim
+
+echo "--- Setup Complete! ---"
+echo "Note: Run 'getnf' to set your font, then restart Termux."
