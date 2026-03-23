@@ -1,0 +1,190 @@
+{
+    "name": "Oldworld",
+    "description": "A dark theme based on the Oldworld Neovim colorscheme by dgox16.",
+    "authors": [
+        {
+            "name": "Purple_Ξye™"
+        }
+    ],
+    "semanticColors": {
+        "ANDROID_NAVIGATION_SCRIM_BACKGROUND": [
+            "#0E0E0F"
+        ],
+        "ANDROID_RIPPLE": [
+            "#ACA1CF24"
+        ],
+        "BACKGROUND_ACCENT": [
+            "#ACA1CF"
+        ],
+        "BACKGROUND_MODIFIER_ACCENT": [
+            "#8c8c8c12"
+        ],
+        "BACKGROUND_PRIMARY": [
+            "#161617"
+        ],
+        "BACKGROUND_SECONDARY": [
+            "#1a1a1c"
+        ],
+        "BACKGROUND_MENTIONED": [
+            "#92A2D515"
+        ],
+        "BG_BASE_TERTIARY": [
+            "#111112"
+        ],
+        "BG_BASE_PRIMARY": [
+            "#161617"
+        ],
+        "BG_BASE_SECONDARY": [
+            "#161617"
+        ],
+        "BG_BRAND": [
+            "#92A2D595"
+        ],
+        "BG_SURFACE_RAISED": [
+            "#1e1e20"
+        ],
+        "BG_SURFACE_OVERLAY_TMP": [
+            "#1a1a1c"
+        ],
+        "CARD_PRIMARY_BG": [
+            "#1e1e20"
+        ],
+        "CARD_SECONDARY_BG": [
+            "#1e1e20"
+        ],
+        "CHANNEL_ICON": [
+            "#ACA1CF65"
+        ],
+        "EMBED_BACKGROUND": [
+            "#1a1a1c"
+        ],
+        "EMBED_BACKGROUND_ALTERNATE": [
+            "#1a1a1c"
+        ],
+        "INTERACTIVE_ACTIVE": [
+            "#C9C7CD"
+        ],
+        "INTERACTIVE_MUTED": [
+            "#2e2e31"
+        ],
+        "INTERACTIVE_NORMAL": [
+            "#ACA1CF"
+        ],
+        "PANEL_BG": [
+            "#111112"
+        ],
+        "REDESIGN_BUTTON_PRIMARY_PRESSED_BACKGROUND": [
+            "#7a72a8"
+        ],
+        "REDESIGN_BUTTON_SECONDARY_BACKGROUND": [
+            "#7a72a8"
+        ],
+        "REDESIGN_BUTTON_SECONDARY_BORDER": [
+            "#7a72a8"
+        ],
+        "REDESIGN_BUTTON_SECONDARY_PRESSED_BACKGROUND": [
+            "#ACA1CF"
+        ],
+        "REDESIGN_BUTTON_SECONDARY_TEXT": [
+            "#C9C7CD"
+        ],
+        "REDESIGN_BUTTON_TERTIARY_TEXT": [
+            "#ACA1CF"
+        ],
+        "REDESIGN_CHANNEL_CATEGORY_NAME_TEXT": [
+            "#92A2D5"
+        ],
+        "TEXT_NORMAL": [
+            "#C9C7CD"
+        ],
+        "TEXT_PRIMARY": [
+            "#C9C7CD"
+        ],
+        "TEXT_SECONDARY": [
+            "#a09daa"
+        ],
+        "THREAD_CHANNEL_SPINE": [
+            "#ACA1CF"
+        ],
+        "BACKGROUND_SECONDARY_ALT": [
+            "#7a72a8"
+        ],
+        "PREMIUM_NITRO_PINK_TEXT": [
+            "#E29ECA"
+        ],
+        "TEXT_MUTED": [
+            "#6e6b76"
+        ],
+        "TEXT_LINK": [
+            "#92A2D5"
+        ],
+        "REDESIGN_CHAT_INPUT_BACKGROUND": [
+            "#1e1e20"
+        ],
+        "REDESIGN_BUTTON_TERTIARY_BACKGROUND": [
+            "#1e1e20"
+        ],
+        "INPUT_BACKGROUND": [
+            "#1e1e20"
+        ],
+        "TEXT_DANGER": [
+            "#EA83A5"
+        ],
+        "BUTTON_OUTLINE_DANGER_BORDER": [
+            "#EA83A5"
+        ],
+        "INFO_DANGER_BACKGROUND": [
+            "#EA83A51a"
+        ],
+        "INFO_DANGER_FOREGROUND": [
+            "#EA83A5"
+        ],
+        "STATUS_DANGER": [
+            "#EA83A5"
+        ],
+        "STATUS_DND": [
+            "#EA83A5"
+        ],
+        "BACKGROUND_MESSAGE_AUTOMOD": [
+            "#EA83A50d"
+        ],
+        "BACKGROUND_MESSAGE_AUTOMOD_HOVER": [
+            "#EA83A51a"
+        ],
+        "BACKGROUND_MODIFIER_ACTIVE": [
+            "#ACA1CF14"
+        ]
+    },
+    "rawColors": {
+        "BLUE_345": "#92A2D5",
+        "GREEN_430": "#90B99F",
+        "RED_430": "#EA83A5",
+        "RED_460": "#c05f7a",
+        "GREEN_460": "#6a9478",
+        "BRAND_260": "#ACA1CF",
+        "BRAND_360": "#ACA1CF",
+        "RED_400": "#EA83A5",
+        "BRAND_500": "#92A2D5",
+        "BRAND_560": "#7a72a8",
+        "PLUM_13": "#ACA1CF",
+        "PLUM_14": "#1e1e20",
+        "PLUM_15": "#92A2D5",
+        "PLUM_16": "#1e1e20",
+        "PLUM_17": "#1a1a1c",
+        "PLUM_18": "#161617",
+        "PLUM_19": "#7a72a8",
+        "PLUM_20": "#161617",
+        "PLUM_22": "#1e1e20",
+        "PLUM_24": "#252527",
+        "PRIMARY_500": "#2a2a2d",
+        "PRIMARY_600": "#111112",
+        "PRIMARY_660": "#1a1a1c",
+        "PRIMARY_700": "#161617",
+        "PRIMARY_800": "#111112"
+    },
+    "spec": 2,
+    "plus": {
+        "version": 0,
+        "mentionLineColor": "#92A2D5"
+    }
+}
